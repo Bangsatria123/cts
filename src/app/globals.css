@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.ps-22{
+    padding-left: 5.5rem;
+}
