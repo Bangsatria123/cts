@@ -33,5 +33,4 @@
     *.tsbuildinfo
     next-env.d.ts
 
-    # Allow specific images
-    !src/app/utils/img/a-removebg-preview.png
+node_modules

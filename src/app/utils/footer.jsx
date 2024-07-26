@@ -28,7 +28,11 @@ const Footer = () => {
                     </Link>
                 </div>
             </div>
-            
+            <div className="col-span-3 text-center mt-10">
+                <p className="text-xs text-tertiary">
+                    &copy; 2024 Calon Teknik Sipil. All rights reserved.
+                </p>
+            </div>
         </div>
     )
 }
