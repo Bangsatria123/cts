@@ -46,10 +46,10 @@ const Event = () => {
             </div>
             <div className="flex gap-2  justify-center items-center rounded-md py-6">
                 <div className="w-full">
-                    <Dropdown />
+                    <Dropdown value="Pilih kategori" q="Seminar" w="Webinar" e="Kompetisi" r="Bimbingan Belajar" />
                 </div>
                 <div className="w-full">
-                    <Dropdown />
+                    <Dropdown value="Pilih Media" q="Online (Zoom)" w="Offline" e="Optional" />
                 </div>
             </div>
         </div>
