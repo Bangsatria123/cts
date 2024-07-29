@@ -19,7 +19,7 @@ const Navbar = () => {
             <div className="flex ps-24">
                 <Image src={logo} alt="logo" width={300} height={300} />
             </div>
-            <nav className="flex items-center w-full  bg-primary text-secondary text-lg font-semibold  ps-28 mt-4 ">
+            <nav className="w-full md-text-2xl bg-primary text-secondary text-lg font-semibold p-0">
                 <Link  className={`px-6 py-1 rounded-md transition ease duration-300 ${pathname === '/' ? 'bg-tertiary text-secondary hover:bg-secondary hover:text-tertiary' : 'hover:bg-secondary hover:text-tertiary'}`} href="/">Home</Link>
                 <Link  className={`px-6 py-1 rounded-md transition ease duration-300 ${pathname === '/article' ? 'bg-tertiary text-secondary hover:bg-secondary hover:text-tertiary' : 'hover:bg-secondary hover:text-tertiary'}`} href="/articles">Articles</Link>
                 <Link  className={`px-6 py-1 rounded-md transition ease duration-300 ${pathname === '/news' ? 'bg-tertiary text-secondary hover:bg-secondary hover:text-tertiary' : 'hover:bg-secondary hover:text-tertiary'}`} href="/news">News</Link>

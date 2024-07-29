@@ -7,13 +7,13 @@ import Navbar from "../utils/navbar";
 
 const Event = () => {
     return (
-        <>
+        <div className="w-full">
         <Navbar />
-        <div>
-            <div className="py-10 text-secondary text-center flex justify-center items-center text-4xl font-bold">
+        <div className="my-10 gap-5 text-center flex flex-col justify-center items-center ">
+            <div className=" text-secondary md:text-4xl text-3xl font-bold">
                 <h1>Event</h1>
             </div>
-            <div className="py-10 text-secondary text-center flex justify-center items-center text-3xl font-bold">
+            <div className=" text-secondary md:text-3xl text-xl font-bold">
                 <h1>Buat event yang dapat dijangkau kepada komunitas kami, gratis!</h1>
             </div>
         </div>
@@ -46,21 +46,25 @@ const Event = () => {
             </div>
             <div className="flex gap-2  justify-center items-center rounded-md py-6">
                 <div className="w-full">
-                    <Dropdown value="Pilih kategori" q="Seminar" w="Webinar" e="Kompetisi" r="Bimbingan Belajar" />
+                    <Dropdown value="Pilih kategori" q="Seminar" w="Webinar" e="Kompetisi" r="Bimbingan Belajar " />
                 </div>
                 <div className="w-full">
                     <Dropdown value="Pilih Media" q="Online (Zoom)" w="Offline" e="Optional" />
                 </div>
             </div>
         </div>
-        
-
-        <div className="grid grid-cols-3 justify-center items-center gap-8 px-32 py-10">
-            <Card title="Konstruksi Indonesia 2023" icon_brand="Konstruksi Indonesia" location="Jakarta International Expo" address="Pamendangan,Jakarta Utara" time="1 - 3 November 2023" price="FREE"/>
-            <Card title="Konstruksi Indonesia 2023" icon_brand="Konstruksi Indonesia" location="Jakarta International Expo" address="Pamendangan,Jakarta Utara" time="1 - 3 November 2023" price="FREE"/>
-            <Card title="Konstruksi Indonesia 2023" icon_brand="Konstruksi Indonesia" location="Jakarta International Expo" address="Pamendangan,Jakarta Utara" time="1 - 3 November 2023" price="FREE"/>
+            
+            {/* CARD */}
+            <div className="p-5 grid mx-4 gap-4
+            lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 sm:items-center md:items-center  lg:items-center
+            justify-center">
+                <Card title="Konstruksi Indonesia 2023" icon_brand="Konstruksi Indonesia" location="Jakarta International Expo" address="Pamendangan,Jakarta Utara" time="1 - 3 November 2023" price="FREE"/>
+                <Card title="Konstruksi Indonesia 2023" icon_brand="Konstruksi Indonesia" location="Jakarta International Expo" address="Pamendangan,Jakarta Utara" time="1 - 3 November 2023" price="FREE"/>
+                <Card title="Konstruksi Indonesia 2023" icon_brand="Konstruksi Indonesia" location="Jakarta International Expo" address="Pamendangan,Jakarta Utara" time="1 - 3 November 2023" price="FREE"/>
+            </div>
+            {/* CARD END */}
+            
         </div>
-        </>
     )
 }
 
