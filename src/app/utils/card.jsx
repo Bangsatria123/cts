@@ -9,7 +9,7 @@ import logo from "../img/a-removebg-preview.png"
 
 const Card = ({ title,  location, address, time, price }) => {
     return (
-        <div className="border border-secondary rounded-md gap-2">
+        <div className="border border-secondary rounded-md">
 
             {/* IMAGE */}
             <div className="flex flex-col" >
@@ -30,7 +30,7 @@ const Card = ({ title,  location, address, time, price }) => {
             {/* END IMAGE */}
 
             {/* CONTENT */}
-            <div className=" ms-3 flex flex-col py-6 md:text-xl md:gap-7 gap-5 lg:gap-8">
+            <div className=" mx-3 flex flex-col py-6 md:text-xl md:gap-7 gap-5 lg:gap-8">
                 {/* TAG */}
                 <div className="gap-2 flex flex-col md:flex-row my-2">
                     <Button link="/" tag="Onsite" padd="p-2"/>
@@ -65,15 +65,18 @@ const Card = ({ title,  location, address, time, price }) => {
                 <div className="flex flex-col gap-5 px-2">
                     {/* LOCATION */}
                     <div className="flex gap-2 ">
-                        <Link href='/' className=" ">
-                            <Image
-                            src={pin}
-                            alt="...."
-                            width={30}
-                            height={30}
-                            className=""
-                            />
-                        </Link>
+                        <div className="flex justify-center items-center">
+
+                            <Link href='/' className=" ">
+                                <Image
+                                src={pin}
+                                alt="...."
+                                width={30}
+                                height={30}
+                                className=""
+                                />
+                            </Link>
+                        </div>
                         <div className="flex flex-col ">
                             <Link
                             href={`/`}
@@ -116,7 +119,7 @@ const Card = ({ title,  location, address, time, price }) => {
                 {/* PRICE */}
                     <Link
                     href={`/`}
-                    className="font-bold lg:text-2xl sm:text-xl md:text-xl text-secondary"
+                    className="font-bold lg:text-2xl sm:text-xl md:text-2xl text-secondary"
                     >
                     {price}
                     </Link>
